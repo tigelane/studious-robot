@@ -1,0 +1,33 @@
+{
+    "Name": "New Virtual Machine",
+    "AssociatedObject": {
+        "ObjectType": "organization.Organization",
+        "Moid": "5ddf46176972652d30bd9960"
+    },
+    "Action": "Start",
+    "Input": {
+        "Vcenter": {
+            "Moid": "614221df6f72612d33a0ca92",
+            "ObjectType": "asset.DeviceRegistration"
+        },
+        "Image": "http://172.24.1.70/install/dsl.ova",
+        "VmName": "Test-demo-api-25",
+        "Datacenter": "Pod4-HXDC",
+        "Cluster": "Pod4-HX01",
+        "Datastore": "Pod4Test",
+        "CPUs": 1,
+        "Memory": 1024,
+        "PowerOn": true
+    },
+    "WorkflowDefinition": {
+        "Moid": "5e6ae227696f6e2d30d32303",
+        "ObjectType": "workflow.WorkflowDefinition"
+    },
+    "WorkflowCtx": {
+        "InitiatorCtx": {
+            "InitiatorMoid": "5e6ae227696f6e2d30d32303",
+            "InitiatorName": "NewVirtualMachine",
+            "InitiatorType": "workflow.WorkflowDefinition"
+        }
+    }
+}
